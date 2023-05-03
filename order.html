@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+    <title>Simon’s Fresh Raw Seafood</title>
+	
+     <style>
+nav.navigation {
+  color: white;
+  font-size: 20px;
+  
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+nav.navigation a {
+
+  text-decoration: none;
+  color: #fff;
+  padding: 30px;
+  padding-left: 30px;
+  padding-right:30px;
+}
+
+nav.navigation a:hover {
+  background-color: #333;
+  color: #fff;
+  
+}
+
+section {
+  display: flex;
+	}
+
+section {
+  display: flex;
+	}
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+	.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  
+}
+
+.topnav a:hover {
+  background-color: grey;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: grey;
+  color: white;
+}
+
+header {
+  
+ height: 100px;
+ background-color: #1B1B1B;
+  background-size: cover;
+  color: white ;
+  text-align: center;
+  padding: 10px;
+  font-size: 90px;
+  font-family: Gabriola;
+}
+
+body {
+  font-family: Quincy CF;
+  font-size: 40px;
+  background-image: url('bg.png');
+  background-repeat: no-repeat;	
+  background-attachment: fixed;
+  
+  background-size: 100% 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body, button, input {
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  background-attachment: fixed;
+
+}
+
+.background {
+  display: flex;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+.container {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.screen {
+  position: relative;
+  background: grey;
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  z-index: -1;
+}
+
+.screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+  margin-right: auto;
+}
+
+.screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: white;
+}
+
+.screen-header-button.close {
+  background:white;
+}
+
+.screen-header-button.maximize {
+  background:white;
+}
+
+.screen-header-button.minimize {
+  background: white;
+}
+
+.screen-header-right {
+  display: flex;
+}
+
+.screen-header-ellipsis {
+  width: 3px;
+  height: 3px;
+  margin-left: 2px;
+  border-radius: 8px;
+  background:white;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: white;
+  font-size: 26px;
+}
+
+.app-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: white;
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 8px;
+  color: white;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: white;
+}
+
+.app-form-control:focus {
+  border-bottom-color: white;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color:white;
+}
+
+.credits-link {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.dribbble {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+	</style>
+  </head>
+  
+  <body>
+  <header>
+	
+    Simon’s Fresh Raw Seafood
+
+    </header>
+
+	<nav class="navigation">
+    <body>
+		
+	<a href="home.html">Home</a>
+	<a href="about.html">About</a>
+	<a href="seafoods.html">Seafoods</a>
+	<a href="order.html">Order Now</a>
+		<hr>
+	</div>
+	<br> <br> <br> <br>
+	
+<div class="background">
+        <div class="container">
+          <div class="screen">
+            <div class="screen-header">
+              <div class="screen-header-left">
+                <div class="screen-header-button close"></div>
+                <div class="screen-header-button maximize"></div>
+                <div class="screen-header-button minimize"></div>
+              </div>
+              <div class="screen-header-right">
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+              </div>
+            </div>
+            <div class="screen-body">
+              <div class="screen-body-item left">
+                <div class="app-title">
+                  <span>ORDER</span>
+                  <span>NOW</span>
+                </div>
+                <div class="app-contact">CONTACT INFO : 09265597306</div>
+              </div>
+              <div class="screen-body-item">
+                <div class="app-form">
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="NAME" value="">
+                  </div>
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="EMAIL">
+                  </div>
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="CONTACT NO">
+                  </div>
+                  <div class="app-form-group message">
+                    <input class="app-form-control" placeholder="ORDER">
+                  </div>
+                  <div class="app-form-group buttons">
+                    <a href="submit.html"><button class="app-form-button">SEND</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+           
+      
+            </a>
+          </div>
+        </div>
+      </div>
+  
+  <p> Email us at simonseafood@gmail.com </p>
+  <p> You can call us at 09111122332 </p>
+  <p> Visit us on www.facebook SimonSeafood</p>
+  <p> Visit us on wwww.instagram SimonSeafood</p>
+  
+  <br><br><br><br><br>
+
+<footer>
+  <br><br><br><br><br>
+		
+	<a href="home.html">Home</a>
+	<a href="about.html">About</a>
+	<a href="seafoods.html">Seafoods</a>
+	<a href="order.html">Order Now</a>
+	<p>© Simon's Fresh Raw Seafood 2023</p>
+	<img src="logo.png" width="100" 
+     height="100" />
+</body>
+</html>
